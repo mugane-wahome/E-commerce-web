@@ -1,0 +1,59 @@
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  
+    background-color: var(--black);
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 22;
+  }
+
+.lightbox {
+  max-width:34rem;
+}
+  
+.lightbox .next {
+  display: flex;
+  transform: translateX(50%);
+}
+
+.lightbox .previous {
+  display: flex;
+  transform: translateX(-50%);
+}
+
+.arrow {
+  top: 40%;
+}
+
+.previous img:hover,
+.next img:hover {
+  filter: invert(63%) sepia(86%) saturate(1274%) hue-rotate(357deg) brightness(99%) contrast(104%);
+}
+
+.btnClose {
+    width: 34rem;
+    text-align: end;
+    padding: 1rem;
+  }
+
+  .btnClose img {
+    cursor: pointer;
+    filter: brightness(300%);
+  }
+
+  .btnClose img:hover {
+    filter: invert(63%) sepia(86%) saturate(1274%) hue-rotate(357deg) brightness(99%) contrast(104%);
+  }
+
+  .hidden {
+    display: none;
+  }
+  
+
